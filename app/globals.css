@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; background: #0C0C0C; }
+body { background: #0C0C0C; color: #fff; font-family: var(--font-body), sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: #FF3D00; color: #0C0C0C; }
+@keyframes marqueeR { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-r { animation: marqueeR 140s linear infinite; width: max-content; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; } }
